@@ -17,7 +17,7 @@ const ModalCard = (props)=>{
 
     return (
 
-        <CardWrapper show={props.show} animate={animate} height={props.height}>
+        <CardWrapper show={props.show} animate={animate} height={props.height} z={1000}>
             <button onClick={()=>{
                 props.toggleShow(false);
             }}>X</button>

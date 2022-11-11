@@ -23,10 +23,10 @@ function App() {
       <button onClick={()=>set_modal_one_show(prev=>!prev)}>Open Modal 1</button>
       <button onClick={()=>set_modal_two_show(prev=>!prev)}>Open Modal 2</button>
 
-      <ModalCard show={modal_one_show} toggleShow = {set_modal_one_show} height="456px">
+      <ModalCard show={modal_one_show} toggleShow = {set_modal_one_show} height="456px" zIndex={1000}>
         <h3>modal one content</h3>
       </ModalCard>
-      <ModalCard show={modal_two_show} toggleShow = {set_modal_two_show} height="350px">
+      <ModalCard show={modal_two_show} toggleShow = {set_modal_two_show} height="350px" zIndex={1001}>
         <h3>modal two content</h3>
         
       </ModalCard>

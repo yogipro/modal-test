@@ -18,10 +18,11 @@ export const CardWrapper = Styled.div`
     bottom:0;
     position:fixed;
     left:0;
+    // background:white;
     border-radius:15px 15px 0 0 ;
     width:100%;
     border:1px solid black;
-    
+    z-index:${props=>props.z};
     animation-name: ${props=>{
         if (props.show && props.animate){
             return slideUp
