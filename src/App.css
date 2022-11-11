@@ -31,7 +31,14 @@
   from{height:100%}
   to{height:0}
 } */
-
+@keyframes fade-in {
+  form{opacity:0}
+  to{opacity:.8};
+}
+@keyframes fade-out {
+  form{opacity:.8}
+  to{opacity:0};
+} 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

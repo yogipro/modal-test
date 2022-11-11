@@ -1,4 +1,4 @@
-import { CardWrapper } from "./ModalCard.styled";
+import { CardWrapper, ForDrop } from "./ModalCard.styled";
 import React, { useEffect, useRef, useState } from "react";
 
 
@@ -22,6 +22,7 @@ const ModalCard = (props)=>{
                 props.toggleShow(false);
             }}>X</button>
             <h2>Modal</h2>
+            <ForDrop show={props.fordropShow}/>
             {props.children}
         </CardWrapper>
        

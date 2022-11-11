@@ -18,7 +18,7 @@ export const CardWrapper = Styled.div`
     bottom:0;
     position:fixed;
     left:0;
-    // background:white;
+    background:white;
     border-radius:15px 15px 0 0 ;
     width:100%;
     border:1px solid black;
@@ -32,7 +32,18 @@ export const CardWrapper = Styled.div`
             return ""
         }
     }};
-    animation-duration: 1s;
+    animation-duration: .3s;
     animation-fill-mode:forwards;
+
+`;
+export const ForDrop = Styled.div`
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:${props=>props.show?"block":"none"};
+    background:white;
+    opacity:.7;
+    bottom:0;
+    left:0;
 
 `;
